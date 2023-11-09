@@ -40,6 +40,11 @@ class NumberTest {
         number = new Number(-68);
         assertEquals("10111100", number.getSignedBinary());
     }
+    @org.junit.jupiter.api.Test
+    void getSignedBinaryPostive2() { //GET CHLOE TESTED SON
+        number = new Number(148);
+        assertEquals("010010100", number.getSignedBinary());
+    }
 
     @org.junit.jupiter.api.Test
     void getHexadecimalPositive() {
@@ -52,6 +57,7 @@ class NumberTest {
         number = new Number(-68);
         assertEquals("BC", number.getHexadecimal());
     }
+
 
     @org.junit.jupiter.api.Test
     void testToStringPositive() {
